@@ -1,0 +1,243 @@
+{
+  "publisher": "LU-JIEJIE",
+  "name": "open-in-xx",
+  "displayName": "Open in XX",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.6",
+  "description": "",
+  "author": "LU-JIEJIE",
+  "license": "MIT",
+  "homepage": "https://github.com/LU-JIEJIE/open-in-xx#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LU-JIEJIE/open-in-xx"
+  },
+  "bugs": {
+    "url": "https://github.com/LU-JIEJIE/open-in-xx/issues"
+  },
+  "categories": [
+    "Other"
+  ],
+  "l10n": "./l10n",
+  "main": "./dist/index.js",
+  "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "open-in-xx.showOptions",
+        "title": "Show Options"
+      }
+    ],
+    "configuration": {
+      "title": "Open in XX",
+      "properties": {
+        "open-in-xx.links": {
+          "type": "array",
+          "description": "The links associated with the repository to open",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the link"
+              },
+              "url": {
+                "type": "string",
+                "description": "The url of the link"
+              },
+              "icon": {
+                "type": "string",
+                "description": "The icon of the link",
+                "enum": [
+                  "tampermonkey",
+                  "bilibili",
+                  "npm",
+                  "gitlab",
+                  "gitee",
+                  "pypi",
+                  "discord",
+                  "greasyfork",
+                  "twitter",
+                  "x",
+                  "facebook",
+                  "youtube",
+                  "yuque",
+                  "feishu",
+                  "maven",
+                  "docker",
+                  "tieba",
+                  "netlify"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "icons": {
+      "icon-tampermonkey": {
+        "description": "tampermonkey icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E800"
+        }
+      },
+      "icon-bilibili": {
+        "description": "bilibili icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E801"
+        }
+      },
+      "icon-npm": {
+        "description": "npm icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E802"
+        }
+      },
+      "icon-gitlab": {
+        "description": "gitlab icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E803"
+        }
+      },
+      "icon-gitee": {
+        "description": "gitee icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E804"
+        }
+      },
+      "icon-pypi": {
+        "description": "pypi icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E805"
+        }
+      },
+      "icon-discord": {
+        "description": "discord icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E806"
+        }
+      },
+      "icon-greasyfork": {
+        "description": "greasyfork icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E807"
+        }
+      },
+      "icon-twitter": {
+        "description": "twitter icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E808"
+        }
+      },
+      "icon-x": {
+        "description": "x icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E809"
+        }
+      },
+      "icon-facebook": {
+        "description": "facebook icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80A"
+        }
+      },
+      "icon-youtube": {
+        "description": "youtube icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80B"
+        }
+      },
+      "icon-yuque": {
+        "description": "yuque icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80C"
+        }
+      },
+      "icon-feishu": {
+        "description": "feishu icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80D"
+        }
+      },
+      "icon-maven": {
+        "description": "maven icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80E"
+        }
+      },
+      "icon-dockerhub": {
+        "description": "dockerhub icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E80F"
+        }
+      },
+      "icon-tieba": {
+        "description": "tieba icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E810"
+        }
+      },
+      "icon-netlify": {
+        "description": "netlify icon",
+        "default": {
+          "fontPath": "./icons/myiconfont.woff",
+          "fontCharacter": "\\E811"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "nr build --watch",
+    "lint": "eslint .",
+    "vscode:prepublish": "nr build",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && nr publish",
+    "l10n": "npx @vscode/l10n-dev export --outDir ./l10n ./src"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.12.2",
+    "@types/node": "^20.12.5",
+    "@types/vscode": "^1.88.0",
+    "@vscode/l10n-dev": "^0.0.35",
+    "@vscode/vsce": "^2.24.0",
+    "bumpp": "^9.4.0",
+    "eslint": "^9.0.0",
+    "esno": "^4.7.0",
+    "pnpm": "^8.15.6",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8",
+    "vitest": "^1.4.0"
+  }
+}
