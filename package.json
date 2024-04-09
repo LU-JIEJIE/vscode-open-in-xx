@@ -8,13 +8,13 @@
   "description": "Help you open the links that associated with current repository conveniently.",
   "author": "LU-JIEJIE",
   "license": "MIT",
-  "homepage": "https://github.com/LU-JIEJIE/open-in-xx#readme",
+  "homepage": "https://github.com/LU-JIEJIE/vscode-open-in-xx#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LU-JIEJIE/open-in-xx"
+    "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx"
   },
   "bugs": {
-    "url": "https://github.com/LU-JIEJIE/open-in-xx/issues"
+    "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx/issues"
   },
   "categories": [
     "Other"
@@ -32,16 +32,25 @@
     "onStartupFinished"
   ],
   "contributes": {
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "open-in-xx.showLinks"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "open-in-xx.showOptions",
-        "title": "Show Options"
+        "category": "Open in XX",
+        "shortTitle": "Show links",
+        "command": "open-in-xx.showLinks",
+        "title": "Show links associated with the repository"
       }
     ],
     "configuration": {
       "title": "Open in XX",
       "properties": {
-        "open-in-xx.autoScan": {
+        "open-in-xx.auto": {
           "type": "boolean",
           "default": true,
           "description": "Whether to automatically generate the links that may be associated with the repository"
@@ -81,7 +90,8 @@
                   "maven",
                   "docker",
                   "tieba",
-                  "netlify"
+                  "netlify",
+                  "marketplace"
                 ]
               }
             }
@@ -93,127 +103,134 @@
       "icon-tampermonkey": {
         "description": "tampermonkey icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E800"
         }
       },
       "icon-bilibili": {
         "description": "bilibili icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E801"
         }
       },
       "icon-npm": {
         "description": "npm icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E802"
         }
       },
       "icon-gitlab": {
         "description": "gitlab icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E803"
         }
       },
       "icon-gitee": {
         "description": "gitee icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E804"
         }
       },
       "icon-pypi": {
         "description": "pypi icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E805"
         }
       },
       "icon-discord": {
         "description": "discord icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E806"
         }
       },
       "icon-greasyfork": {
         "description": "greasyfork icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E807"
         }
       },
       "icon-twitter": {
         "description": "twitter icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E808"
         }
       },
       "icon-x": {
         "description": "x icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E809"
         }
       },
       "icon-facebook": {
         "description": "facebook icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80A"
         }
       },
       "icon-youtube": {
         "description": "youtube icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80B"
         }
       },
       "icon-yuque": {
         "description": "yuque icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80C"
         }
       },
       "icon-feishu": {
         "description": "feishu icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80D"
         }
       },
       "icon-maven": {
         "description": "maven icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80E"
         }
       },
       "icon-dockerhub": {
         "description": "dockerhub icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E80F"
         }
       },
       "icon-tieba": {
         "description": "tieba icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E810"
         }
       },
       "icon-netlify": {
         "description": "netlify icon",
         "default": {
-          "fontPath": "./icons/myiconfont.woff",
+          "fontPath": "./asset/myiconfont.woff",
           "fontCharacter": "\\E811"
+        }
+      },
+      "icon-marketplace": {
+        "description": "marketplace icon",
+        "default": {
+          "fontPath": "./asset/myiconfont.woff",
+          "fontCharacter": "\\E812"
         }
       }
     }

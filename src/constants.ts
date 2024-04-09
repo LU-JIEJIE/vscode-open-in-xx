@@ -18,6 +18,7 @@ export const ICONS_MAP: Record<string, string> = {
   maven: '$(icon-maven)',
   tampermonkey: '$(icon-tampermonkey)',
   greasyfork: '$(icon-greasyfork)',
+  marketplace: '$(icon-marketplace)',
 
   // Social media platforms
   bilibili: '$(icon-bilibili)',

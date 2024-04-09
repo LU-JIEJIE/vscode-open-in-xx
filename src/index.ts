@@ -13,7 +13,7 @@ export function activate(ext: ExtensionContext) {
         context.readConfiguration()
     }),
 
-    commands.registerCommand(`${EXTENSION_ID}.showOptions`, async () => {
+    commands.registerCommand(`${EXTENSION_ID}.showLinks`, async () => {
       const options: CustomQuickPickItem[] = context.links.map(link => ({
         label: l10n.t('{icon}  Open in {name}', {
           icon: getIcon(link),
@@ -35,7 +35,7 @@ export function activate(ext: ExtensionContext) {
   )
 
   const statusBar = window.createStatusBarItem(StatusBarAlignment.Left, 0)
-  statusBar.command = `${EXTENSION_ID}.showOptions`
+  statusBar.command = `${EXTENSION_ID}.showLinks`
   statusBar.text = `$(ports-open-browser-icon) ${EXTENSION_NAME}`
   statusBar.tooltip = l10n.t('Open links associated with the current workspace...')
   statusBar.show()

@@ -6,7 +6,7 @@ import { getGithubUrl } from './url'
 export class Context {
   public cwd: string
   public links: LinkItem[] = []
-  public autoScan = false
+  public auto = false
 
   constructor() {
     this.cwd = workspace.workspaceFolders![0].uri.fsPath
@@ -16,12 +16,12 @@ export class Context {
   readConfiguration() {
     const config = workspace.getConfiguration(EXTENSION_ID)
     this.links = config.get<LinkItem[]>('links') || []
-    this.autoScan = config.get<boolean>('autoScan') || false
+    this.auto = config.get<boolean>('auto') || false
     this.formatLinks()
   }
 
   async formatLinks() {
-    if (!this.autoScan)
+    if (!this.auto)
       return
 
     if (this.links.some(link => link.name.toLowerCase() === 'github'))

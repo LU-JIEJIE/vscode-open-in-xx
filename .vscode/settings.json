@@ -37,5 +37,18 @@
     "json",
     "jsonc",
     "yaml"
+  ],
+
+  // Open in XX configuration
+  "open-in-xx.auto": false,
+  "open-in-xx.links": [
+    {
+      "name": "github",
+      "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx"
+    },
+    {
+      "name": "marketplace",
+      "url": "https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx"
+    }
   ]
 }
