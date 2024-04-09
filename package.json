@@ -2,10 +2,10 @@
   "publisher": "LU-JIEJIE",
   "name": "open-in-xx",
   "displayName": "Open in XX",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.15.6",
-  "description": "",
+  "description": "Help you open the links that associated with current repository conveniently.",
   "author": "LU-JIEJIE",
   "license": "MIT",
   "homepage": "https://github.com/LU-JIEJIE/open-in-xx#readme",
@@ -26,7 +26,7 @@
     "dist"
   ],
   "engines": {
-    "vscode": "^1.83.0"
+    "vscode": "^1.88.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -41,23 +41,28 @@
     "configuration": {
       "title": "Open in XX",
       "properties": {
+        "open-in-xx.autoScan": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to automatically generate the links that may be associated with the repository"
+        },
         "open-in-xx.links": {
           "type": "array",
-          "description": "The links associated with the repository to open",
+          "description": "The links associated with the repository",
           "items": {
             "type": "object",
             "properties": {
               "name": {
                 "type": "string",
-                "description": "The name of the link"
+                "description": "The name of the link item"
               },
               "url": {
                 "type": "string",
-                "description": "The url of the link"
+                "description": "The url of the link item"
               },
               "icon": {
                 "type": "string",
-                "description": "The icon of the link",
+                "description": "The icon of the link item",
                 "enum": [
                   "tampermonkey",
                   "bilibili",
