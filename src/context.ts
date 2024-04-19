@@ -10,6 +10,7 @@ export class Context {
 
   constructor() {
     this.cwd = workspace.workspaceFolders![0].uri.fsPath
+
     this.readConfiguration()
   }
 
@@ -17,10 +18,10 @@ export class Context {
     const config = workspace.getConfiguration(EXTENSION_ID)
     this.links = config.get<LinkItem[]>('links') || []
     this.auto = config.get<boolean>('auto') || false
-    this.formatLinks()
+    this.autoGenerateLinks()
   }
 
-  async formatLinks() {
+  async autoGenerateLinks() {
     if (!this.auto)
       return
 

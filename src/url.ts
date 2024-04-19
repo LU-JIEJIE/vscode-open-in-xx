@@ -6,8 +6,8 @@ export async function getGithubUrl(cwd: string): Promise<string | undefined> {
       if (err)
         resolve(undefined)
 
-      const url = stdout.match(/(https:\/\/github\.com\/.*)\.git/)?.[1]
-      resolve(url)
+      const url = stdout.match(/(https:\/\/github\.com\/[^\s]*)/)?.[1]
+      resolve(url?.replace(/\.git$/, ''))
     })
   })
 }
