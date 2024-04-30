@@ -23,7 +23,7 @@ Make sure you set the configuration in your `settings.json` , and then click the
       // The name of the link item
       "name": "github",
       // The url of the link item
-      "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx"
+      "url": "https://github.com/Lu-Jiejie/vscode-open-in-xx"
     },
     {
       "name": "VS Code Marketplace",

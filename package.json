@@ -6,15 +6,15 @@
   "private": true,
   "packageManager": "pnpm@9.0.6",
   "description": "Help you open the links that associated with current repository conveniently.",
-  "author": "LU-JIEJIE",
+  "author": "Lu-Jiejie <Lu-Jiejie@outlook.com>",
   "license": "MIT",
-  "homepage": "https://github.com/LU-JIEJIE/vscode-open-in-xx#readme",
+  "homepage": "https://github.com/Lu-Jiejie/vscode-open-in-xx#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx"
+    "url": "https://github.com/Lu-Jiejie/vscode-open-in-xx"
   },
   "bugs": {
-    "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx/issues"
+    "url": "https://github.com/Lu-Jiejie/vscode-open-in-xx/issues"
   },
   "categories": [
     "Other"

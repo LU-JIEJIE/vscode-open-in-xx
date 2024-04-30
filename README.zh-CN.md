@@ -23,7 +23,7 @@
       // 链接项的名称
       "name": "github",
       // 链接项的 URL
-      "url": "https://github.com/LU-JIEJIE/vscode-open-in-xx"
+      "url": "https://github.com/Lu-Jiejie/vscode-open-in-xx"
     },
     {
       "name": "VS Code Marketplace",
