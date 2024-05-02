@@ -4,7 +4,9 @@
 
 English | [简体中文](./README.zh-CN.md)
 
-Help you open the links that associated with current repository conveniently, such as Github, NPM, or or other links that you have configured.
+Open in GitHub! Open in NPM! Open in PyPI! Or open in XX!
+
+Help you open the links that associated with current repository conveniently, such as GitHub, NPM, or or other links that you have configured.
 
 ## Usage
 
