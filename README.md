@@ -1,6 +1,6 @@
 # Open in XX
 
-<a href="https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/LuJiejie.open-in-xx.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+[![marketplate version][marketplace-version-badge]][marketplace-version-href]
 
 English | [简体中文](./README.zh-CN.md)
 
@@ -36,3 +36,7 @@ Make sure you set the configuration in your `settings.json` , and then click the
   ]
 }
 ```
+
+<!-- Badge -->
+[marketplace-version-badge]: https://img.shields.io/visual-studio-marketplace/v/LuJiejie.open-in-xx?color=ddd&labelColor=444&logo=visualstudiocode&label=VS%20Code%20Marketplace
+[marketplace-version-href]: https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx
