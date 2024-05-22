@@ -2,7 +2,7 @@
   "publisher": "LuJiejie",
   "name": "open-in-xx",
   "displayName": "Open in XX",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "packageManager": "pnpm@9.1.1",
   "description": "Help you open the links that associated with current repository conveniently.",
