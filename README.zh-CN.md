@@ -1,6 +1,19 @@
-# Open in XX
+<p align="center">
+<img src="./res/icon.png" height="150">
+</p>
 
-[![marketplate version][marketplace-version-badge]][marketplace-version-href]
+<h1 align="center">
+Open in XX
+</h1>
+
+<p align="center">
+帮助你更方便地打开与当前存储库关联的链接。
+</p>
+
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/LuJiejie.open-in-xx?color=ddd&labelColor=444&logo=visualstudiocode&label=VS%20Code%20Marketplace" alt="Visual Studio Marketplace Version" /></a>
+<a href="https://github.com/Lu-Jiejie/flowmit/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/Lu-Jiejie/flowmit?style=flat&color=ddd&labelColor=444" alt="LICENSE" /></a>
+</p>
 
 [English](./README.md) | 简体中文
 
