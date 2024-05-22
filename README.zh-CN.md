@@ -49,7 +49,25 @@ Open in XX
   ]
 }
 ```
+### 图标
 
-<!-- Badge -->
-[marketplace-version-badge]: https://img.shields.io/visual-studio-marketplace/v/LuJiejie.open-in-xx?color=ddd&labelColor=444&logo=visualstudiocode&label=VS%20Code%20Marketplace
-[marketplace-version-href]: https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx
+所有内置的图标如下：
++ tampermonkey
++ bilibili
++ npm
++ gitlab
++ gitee
++ pypi
++ discord
++ greasyfork
++ twitter
++ x
++ facebook
++ youtube
++ yuque
++ feishu
++ maven
++ docker
++ tieba
++ netlify
++ marketplac

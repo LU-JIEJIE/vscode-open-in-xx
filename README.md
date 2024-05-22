@@ -43,13 +43,32 @@ Make sure you set the configuration in your `settings.json` , and then click the
     {
       "name": "VS Code Marketplace",
       "url": "https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx",
-      // The icon of the link item, it's built-in and optional. when not set, it depends on the name
+      // The icon of the link item, it's pre-defined and optional. when not set, it depends on the name
       "icon": "marketplace"
     }
   ]
 }
 ```
 
-<!-- Badge -->
-[marketplace-version-badge]: https://img.shields.io/visual-studio-marketplace/v/LuJiejie.open-in-xx?color=ddd&labelColor=444&logo=visualstudiocode&label=VS%20Code%20Marketplace
-[marketplace-version-href]: https://marketplace.visualstudio.com/items?itemName=LuJiejie.open-in-xx
+### icon
+
+All the pre-defined icons are listed below:
++ tampermonkey
++ bilibili
++ npm
++ gitlab
++ gitee
++ pypi
++ discord
++ greasyfork
++ twitter
++ x
++ facebook
++ youtube
++ yuque
++ feishu
++ maven
++ docker
++ tieba
++ netlify
++ marketplac
